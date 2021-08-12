@@ -1,5 +1,6 @@
 {
 	"type": "light",
+	"semanticHighlighting": true,
 	"colors": {
 		"focusBorder": "#bec1c6",
 		"foreground": "#8a9199",
@@ -765,6 +766,30 @@
 			"settings": {
 				"background": "#575f66",
 				"foreground": "#abb0b6"
+			}
+		},
+		{
+			"scope": "emphasis",
+			"settings": {
+				"fontStyle": "italic"
+			}
+		},
+		{
+			"scope": "strong",
+			"settings": {
+				"fontStyle": "bold"
+			}
+		},
+		{
+			"scope": "markup.underline",
+			"settings": {
+				"fontStyle": "underline"
+			}
+		},
+		{
+			"scope": "markup.italic",
+			"settings": {
+				"fontStyle": "italic"
 			}
 		}
 	]
