@@ -297,6 +297,9 @@
     "swig": {
       "iconPath": "./icons/file_type_swig@2x.png"
     },
+    "tailwind": {
+      "iconPath": "./icons/file_type_tailwind.svg"
+    },
     "tcl": {
       "iconPath": "./icons/file_type_tcl@2x.png"
     },
@@ -579,6 +582,7 @@
     "package.json": "npm",
     "Procfile": "procfile",
     "rollup.config.js": "rollup",
+    "tailwind.config.css": "tailwind",
     "vagrantfile": "settings",
     "webpack.config.babel.js": "webpack",
     "webpack.config.js": "webpack",
