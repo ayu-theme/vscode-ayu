@@ -1,9 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <svg width="16px" height="16px" viewBox="0 0 16 16" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
     <title>file_type_npm</title>
-    <g id="file_type_npm" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
-        <g transform="translate(1.000000, 1.000000)" fill="#CC3333" id="file_type_npm.svg">
-            <path d="M13.5,0.5 L13.5,13.5 L0.5,13.5 L0.5,0.5 L13.5,0.5 Z M2.5,2.5 L2.5,11.5 L7,11.5 L7,4.74155194 L9.25,4.74155194 L9.25,11.5 L11.5,11.5 L11.5,2.5 L2.5,2.5 Z"></path>
-        </g>
+    <g id="file_type_npm">
+        <path d="m2 1c-0.57 0-1 0.46-1 1v12c0 0.57 0.46 1 1 1h12c0.57 0 1-0.46 1-1v-12c0-0.57-0.46-1-1-1zm2 3.1 8.1 0.011-0.0053 8.1h-2l0.0058-6.1h-2l-0.0047 6.1h-4z" fill="#cb3837" style="stroke-width:.58"/>
     </g>
 </svg>
