@@ -333,7 +333,7 @@
     "yarn": {
       "iconPath": "./icons/file_type_yarn@2x.png"
     },
-    "zip": {
+    "archive": {
       "iconPath": "./icons/file_type_archive@2x.png"
     }
   },
