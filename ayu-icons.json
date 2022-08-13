@@ -216,6 +216,9 @@
     "php": {
       "iconPath": "./icons/file_type_php.svg"
     },
+    "prettier": {
+      "iconPath": "./icons/file_type_prettier.svg"
+    },
     "procfile": {
       "iconPath": "./icons/file_type_procfile.svg"
     },
@@ -577,6 +580,11 @@
     "license.md": "license",
     "makefile": "settings",
     "package.json": "npm",
+    ".prettierrc": "prettier",
+    ".prettierrc.js": "prettier",
+    ".prettierrc.json": "prettier",
+    ".prettierrc.yaml": "prettier",
+    ".prettierrc.yml": "prettier",
     "Procfile": "procfile",
     "rollup.config.js": "rollup",
     "vagrantfile": "settings",
