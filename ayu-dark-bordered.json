@@ -164,6 +164,8 @@
 		"peekViewResult.lineForeground": "#565b66",
 		"peekViewResult.matchHighlightBackground": "#6c598066",
 		"peekViewResult.selectionBackground": "#47526640",
+		"editorCommentsWidget.resolvedBorder": "#565b66",
+		"editorCommentsWidget.unresolvedBorder": "#e6b450",
 		"panel.background": "#0b0e14",
 		"panel.border": "#11151c",
 		"panelTitle.activeBorder": "#e6b450",
