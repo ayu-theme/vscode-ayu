@@ -1,42 +1,49 @@
-![vscode-ayu](assets/header.png)
+![ayu](assets/header.png)
 
-> Source from: https://github.com/dempfi/ayu
+[![Version](https://img.shields.io/visual-studio-marketplace/v/teabyii.ayu?style=flat)](https://marketplace.visualstudio.com/items?itemName=teabyii.ayu)
+[![Installs](https://img.shields.io/visual-studio-marketplace/i/teabyii.ayu?style=flat)](https://marketplace.visualstudio.com/items?itemName=teabyii.ayu)
 
-A simple theme with bright colors and comes in three versions — *dark*, *light* and *mirage* for all day long comfortable work.
+A simple theme with bright colors, available in three variants — dark, light, and mirage. This is the official VS Code port of the [Ayu theme](https://github.com/dempfi/ayu).
 
-> Note that this isn't a theme maintained by the original [Ayu theme](https://github.com/dempfi/ayu) author so please report issues related to this theme here.
+## Features
+
+- **6 color themes**: Light, Mirage, and Dark — each with bordered and unbordered variants
+- **File icons**: Custom icon theme included
+- **[Iosevka font](https://github.com/ayu-theme/vscode-ayu/tree/master/fonts)**: Bundled for a consistent look (as seen in screenshots)
+
+> **Bordered vs Unbordered**: Bordered themes have visible dividers between UI panels. Unbordered themes have a seamless, unified look.
 
 ## Install
 
+[Install from the Marketplace](https://marketplace.visualstudio.com/items?itemName=teabyii.ayu), or run:
+
 ```shell
-ext install ayu
+ext install teabyii.ayu
 ```
 
-Then go to `Preferences > Color Theme > Ayu Light(or Ayu Dark, or Ayu Mirage)`.
-If you want to setup File Icon, then go to `Preferences > File Icon Theme > Ayu`.
+Then go to `Preferences > Color Theme` and select one of the Ayu variants.
+
+To enable file icons: `Preferences > File Icon Theme > Ayu`.
 
 ## Screenshots
 
-#### Light
+### Light
+
 ![Light](assets/light.png)
-![Light Bordered](assets/light-bordered.png)
+![Light Unbordered](assets/light-unbordered.png)
 
-#### Mirage
+### Mirage
+
 ![Mirage](assets/mirage.png)
-![Mirage Bordered](assets/mirage-bordered.png)
+![Mirage Unbordered](assets/mirage-unbordered.png)
 
-#### Dark
+### Dark
+
 ![Dark](assets/dark.png)
-![Dark Bordered](assets/dark-bordered.png)
+![Dark Unbordered](assets/dark-unbordered.png)
 
 ## Development
 
-Install dependencies
-```shell
-npm install
-```
-
-Update themes and build VSIX package
-```shell
-npm run build && npm run package
-```
+1. `npm i` to install dependencies
+2. `npm start` to build the theme in watch mode
+3. Press F5 to observe changes in real-time in the debug editor window

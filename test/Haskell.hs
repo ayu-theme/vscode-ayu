@@ -33,7 +33,7 @@ hash :: String -> B.ByteString -> B.ByteString
 hash prefix bs = SHA256.hash $ B.append (pack prefix) bs
 
 hashString :: String -> B.ByteString
-hashString s = hash "u" $ pack s
+hashString s = hash "u" $ pack
 
 hashNull :: B.ByteString
 hashNull = B.empty
