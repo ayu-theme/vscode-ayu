@@ -2,7 +2,7 @@
   "name": "ayu",
   "displayName": "Ayu",
   "description": "A simple theme with bright colors and comes in three versions — dark, light and mirage for all day long comfortable work.",
-  "version": "1.0.4",
+  "version": "1.1.1",
   "publisher": "teabyii",
   "license": "MIT",
   "repository": {
@@ -70,8 +70,7 @@
   "scripts": {
     "build": "ts-node ./src/build.ts",
     "package": "vsce package",
-    "start": "npm run build; npm run package",
-    "publish": "vsce publish"
+    "publish": "npm run build; vsce package; vsce publish"
   },
   "devDependencies": {
     "@types/node": "^16.6.0",
