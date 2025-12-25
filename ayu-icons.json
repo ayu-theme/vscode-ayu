@@ -15,8 +15,8 @@
     "_folder_open_light": {
       "iconPath": "./icons/folder_opened_light@2x.png"
     },
-    "accdb" : {
-      "iconPath": "./icons/file_type_accdb.svg"
+    "accdb": {
+      "iconPath": "./icons/file_type_accdb.png"
     },
     "actionscript": {
       "iconPath": "./icons/file_type_actionscript@2x.png"
@@ -219,6 +219,9 @@
     "php": {
       "iconPath": "./icons/file_type_php.svg"
     },
+    "prettier": {
+      "iconPath": "./icons/file_type_prettier.svg"
+    },
     "procfile": {
       "iconPath": "./icons/file_type_procfile.svg"
     },
@@ -339,7 +342,7 @@
     "yarn": {
       "iconPath": "./icons/file_type_yarn@2x.png"
     },
-    "zip": {
+    "archive": {
       "iconPath": "./icons/file_type_archive@2x.png"
     }
   },
@@ -590,6 +593,11 @@
     "license.md": "license",
     "makefile": "settings",
     "package.json": "npm",
+    ".prettierrc": "prettier",
+    ".prettierrc.js": "prettier",
+    ".prettierrc.json": "prettier",
+    ".prettierrc.yaml": "prettier",
+    ".prettierrc.yml": "prettier",
     "Procfile": "procfile",
     "rollup.config.js": "rollup",
     "tailwind.config.css": "tailwind",
