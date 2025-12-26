@@ -51,6 +51,9 @@
     "c": {
       "iconPath": "./icons/file_type_c.svg"
     },
+    "cargo": {
+      "iconPath": "./icons/file_type_cargo.svg"
+    },
     "cfc": {
       "iconPath": "./icons/file_type_cfc@2x.png"
     },
@@ -76,7 +79,7 @@
       "iconPath": "./icons/file_type_csv.svg"
     },
     "dart": {
-      "iconPath": "./icons/file_type_dart@2x.png"
+      "iconPath": "./icons/file_type_dart.svg"
     },
     "dlang": {
       "iconPath": "./icons/file_type_dlang@2x.png"
@@ -604,7 +607,9 @@
     "vagrantfile": "settings",
     "webpack.config.babel.js": "webpack",
     "webpack.config.js": "webpack",
-    "yarn.lock": "yarn"
+    "yarn.lock": "yarn",
+    "Cargo.lock": "cargo",
+    "Cargo.toml": "cargo"
   },
   "hidesExplorerArrows": true,
   "languageIds": {}
