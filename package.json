@@ -2,7 +2,7 @@
   "name": "ayu",
   "displayName": "Ayu",
   "description": "A simple theme with bright colors and comes in three versions — dark, light and mirage for all day long comfortable work.",
-  "version": "1.1.5",
+  "version": "1.1.6",
   "publisher": "teabyii",
   "license": "MIT",
   "repository": {
@@ -81,7 +81,7 @@
   },
   "devDependencies": {
     "@types/node": "^20.10.0",
-    "ayu": "^9.0.0",
+    "ayu": "file:../ayu-colors",
     "tsx": "^4.19.0",
     "typescript": "^5.6.0",
     "vsce": "^2.15.0"

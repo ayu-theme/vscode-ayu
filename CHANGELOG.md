@@ -1,6 +1,19 @@
-# ayu theme for Visual Studio Code
+If you run into any issues, please report them at <https://github.com/ayu-theme/vscode-ayu/issues>
 
-Source from: <https://github.com/dempfi/ayu>
+## 1.1.5
+
+`2025-12-24`
+
+- Support semantic highlighting, especially for languages like Rust
+- Colors in chat interfaces (slash commands, bubbles, etc.)
+- Proper shadows/dividers for sticky scrolls
+- Make popup panels (Find/Replace, Command Prompt, etc) prominent
+- Several new icons in the Ayu icon theme and refinements to existing SVG ones
+- More color balancing in the Dark theme's UI
+- Increased contrast in the Explorer for git entries (markers for added/modified/removed files/directories)
+- Marginally increase contrast of the syntax in the Light theme, specifically functions and decorators
+- Increase regular text's contrast in the editor in Light theme
+- Add missing colors for non-default activity bar positions (top or bottom)
 
 ## 1.0.2
 

@@ -808,7 +808,8 @@ export default (variant: SchemeName, bordered: boolean) => {
         scope: [
           'meta.decorator variable.other',
           'meta.decorator punctuation.decorator',
-          'storage.type.annotation'
+          'storage.type.annotation',
+          'entity.name.function.decorator'
         ],
         settings: {
           foreground: scheme.syntax.special.hex()
