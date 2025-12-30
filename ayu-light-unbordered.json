@@ -123,6 +123,7 @@
 		"editorWhitespace.foreground": "#828e9f66",
 		"editorIndentGuide.background": "#828e9f2e",
 		"editorIndentGuide.activeBackground": "#828e9f59",
+		"editorInlayHint.foreground": "#5c616680",
 		"editorRuler.foreground": "#828e9f2e",
 		"editorCodeLens.foreground": "#787b8099",
 		"editorBracketMatch.background": "#828e9f4d",

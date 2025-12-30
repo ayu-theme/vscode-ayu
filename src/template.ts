@@ -215,6 +215,14 @@ export default (variant: SchemeName, bordered: boolean) => {
       'editorIndentGuide.background': scheme.editor.indentGuide.normal.hex(),
       'editorIndentGuide.activeBackground': scheme.editor.indentGuide.active.hex(),
 
+      // INSERTED CODE HINTS (like types by rust-analyzer)
+      // 'editorInlayHint.background': ,
+      'editorInlayHint.foreground': scheme.editor.fg.alpha(0.5).hex(),
+      // 'editorInlayHint.typeForeground': scheme.syntax.entity.alpha(0.7).deltaC(-0.5).hex(),
+      // 'editorInlayHint.typeBackground': ,
+      // 'editorInlayHint.parameterForeground':  ,
+      // 'editorInlayHint.parameterBackground':  ,
+
       'editorRuler.foreground': scheme.editor.indentGuide.normal.hex(),
       'editorCodeLens.foreground': scheme.syntax.comment.hex(),
 
