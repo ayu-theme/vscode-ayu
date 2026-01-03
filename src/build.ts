@@ -1,15 +1,21 @@
-import * as fs from 'fs'
-import * as path from 'path'
+import { cpSync, writeFileSync } from 'fs'
+import { join } from 'path'
 import template, { SchemeName } from './template'
+import iconTemplate from './icon-template'
 
-const filePath = (variant: string, bordered: boolean) =>
-  path.join(process.cwd(), `/ayu-${variant}${bordered ? '' : '-unbordered'}.json`)
+const cwd = process.cwd()
 
-;['light', 'dark', 'mirage'].map((variant: SchemeName) => {
-  const bordered = JSON.stringify(template(variant, true), null, '\t')
-  const nonBordered = JSON.stringify(template(variant, false), null, '\t')
+// Copy icon files from ayu-colors
+cpSync(join(cwd, 'node_modules/ayu/icons'), join(cwd, 'icons'), { recursive: true })
+console.log('Copied icons')
 
-  fs.writeFileSync(filePath(variant, true), bordered)
-  fs.writeFileSync(filePath(variant, false), nonBordered)
+// Generate color themes
+for (const variant of ['light', 'dark', 'mirage'] as SchemeName[]) {
+  writeFileSync(join(cwd, `ayu-${variant}.json`), JSON.stringify(template(variant, true), null, '\t'))
+  writeFileSync(join(cwd, `ayu-${variant}-unbordered.json`), JSON.stringify(template(variant, false), null, '\t'))
   console.log(`Updated ${variant}`)
-})
+}
+
+// Generate icon theme
+writeFileSync(join(cwd, 'ayu-icons.json'), JSON.stringify(iconTemplate(), null, '\t'))
+console.log('Updated icon theme')

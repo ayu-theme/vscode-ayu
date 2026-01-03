@@ -180,8 +180,8 @@ export default (variant: SchemeName, bordered: boolean) => {
       // EDITOR
       'editor.background': bordered ? scheme.editor.bg.hex() : scheme.ui.bg.hex(),
       'editor.foreground': scheme.editor.fg.hex(),
-      'editorLineNumber.foreground': scheme.editor.gutter.normal.hex(),
-      'editorLineNumber.activeForeground': scheme.editor.gutter.active.hex(),
+      'editorLineNumber.foreground': scheme.editor.lineNumber.normal.hex(),
+      'editorLineNumber.activeForeground': scheme.editor.lineNumber.active.hex(),
       'editorCursor.foreground': scheme.common.accent.tint.hex(),
 
       // EDITOR SELECTIONS
@@ -210,7 +210,7 @@ export default (variant: SchemeName, bordered: boolean) => {
 
       'editorLink.activeForeground': scheme.common.accent.tint.hex(),
 
-      'editorWhitespace.foreground': scheme.editor.gutter.normal.hex(),
+      'editorWhitespace.foreground': scheme.editor.lineNumber.normal.hex(),
 
       'editorIndentGuide.background': scheme.editor.indentGuide.normal.hex(),
       'editorIndentGuide.activeBackground': scheme.editor.indentGuide.active.hex(),
@@ -226,8 +226,8 @@ export default (variant: SchemeName, bordered: boolean) => {
       'editorRuler.foreground': scheme.editor.indentGuide.normal.hex(),
       'editorCodeLens.foreground': scheme.syntax.comment.hex(),
 
-      'editorBracketMatch.background': scheme.editor.gutter.normal.alpha(0.3).hex(),
-      'editorBracketMatch.border': scheme.editor.gutter.active.alpha(0.3).hex(),
+      'editorBracketMatch.background': scheme.editor.lineNumber.normal.alpha(0.3).hex(),
+      'editorBracketMatch.border': scheme.editor.lineNumber.active.alpha(0.3).hex(),
 
       // SNIPPETS
       'editor.snippetTabstopHighlightBackground': scheme.vcs.added.alpha(0.2).hex(),
@@ -239,7 +239,9 @@ export default (variant: SchemeName, bordered: boolean) => {
       'editorOverviewRuler.deletedForeground': scheme.vcs.removed.hex(),
       'editorOverviewRuler.errorForeground': scheme.common.error.hex(),
       'editorOverviewRuler.warningForeground': scheme.common.accent.tint.hex(),
-      'editorOverviewRuler.bracketMatchForeground': scheme.editor.gutter.normal.alpha(0.7).hex(),
+      'editorOverviewRuler.bracketMatchForeground': scheme.editor.lineNumber.normal
+        .alpha(0.7)
+        .hex(),
       'editorOverviewRuler.wordHighlightForeground': scheme.vcs.modified.alpha(0.4).hex(),
       'editorOverviewRuler.wordHighlightStrongForeground': scheme.vcs.added.alpha(0.4).hex(),
       'editorOverviewRuler.findMatchForeground': scheme.editor.findMatch.active.hex(),
@@ -446,7 +448,7 @@ export default (variant: SchemeName, bordered: boolean) => {
 
       // CHAT
       'chat.requestBorder': scheme.ui.selection.active.hex(),
-      'chat.requestBackground': scheme.common.error.hex(),
+      'chat.requestBackground': scheme.ui.bg.hex(),
       'chat.requestBubbleBackground': scheme.ui.selection.normal.hex(),
       'chat.requestBubbleHoverBackground': scheme.ui.selection.active.hex(),
       // 'chat.requestCodeBorder': scheme.common.error.hex(),

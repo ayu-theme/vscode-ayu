@@ -1,5 +1,11 @@
 If you run into any issues, please report them at <https://github.com/ayu-theme/vscode-ayu/issues>
 
+## 1.1.7
+
+`2026-01-03`
+
+- Fix the background of the chat confirmation requests
+
 ## 1.1.5
 
 `2025-12-24`
