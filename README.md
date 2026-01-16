@@ -1,17 +1,26 @@
-![ayu](assets/header.png)
+<p align="center">
+  <img src="./assets/header.png" alt="ayu theme for VS Code">
+</p>
 
-[![Version](https://img.shields.io/visual-studio-marketplace/v/teabyii.ayu?style=flat)](https://marketplace.visualstudio.com/items?itemName=teabyii.ayu)
-[![Installs](https://img.shields.io/visual-studio-marketplace/i/teabyii.ayu?style=flat)](https://marketplace.visualstudio.com/items?itemName=teabyii.ayu)
+<p align="center">
+  <a href="https://ayutheme.com">Website</a> •
+  <a href="#install">Install</a> •
+  <a href="#screenshots">Screenshots</a> •
+  <a href="#ports">Ports</a>
+</p>
 
-A simple theme with bright colors, available in three variants — dark, light, and mirage. This is the official VS Code port of the [Ayu theme](https://github.com/dempfi/ayu).
+<p align="center">
+  <a href="https://marketplace.visualstudio.com/items?itemName=teabyii.ayu">
+    <img src="https://img.shields.io/visual-studio-marketplace/v/teabyii.ayu?style=flat" alt="Version">
+  </a>
+  <a href="https://marketplace.visualstudio.com/items?itemName=teabyii.ayu">
+    <img src="https://img.shields.io/visual-studio-marketplace/i/teabyii.ayu?style=flat" alt="Installs">
+  </a>
+</p>
 
-## Features
+---
 
-- **6 color themes**: Light, Mirage, and Dark — each with bordered and unbordered variants
-- **File icons**: Custom icon theme included
-- **[Iosevka font](https://github.com/ayu-theme/vscode-ayu/tree/master/fonts)**: Bundled for a consistent look (as seen in screenshots)
-
-> **Bordered vs Unbordered**: Bordered themes have visible dividers between UI panels. Unbordered themes have a seamless, unified look.
+**ayu** is a bright color theme and comes in three versions — _dark_, _mirage_, and _light_ — for all-day comfortable work. Handcrafted for Visual Studio Code.
 
 ## Install
 
@@ -42,8 +51,26 @@ To enable file icons: `Preferences > File Icon Theme > Ayu`.
 ![Dark](assets/dark.png)
 ![Dark Unbordered](assets/dark-unbordered.png)
 
-## Development
+## Customization
 
-1. `npm i` to install dependencies
-2. `npm start` to build the theme in watch mode
-3. Press F5 to observe changes in real-time in the debug editor window
+**Bordered vs Unbordered**: Bordered themes have visible dividers between UI panels. Unbordered themes have a seamless, unified look.
+
+The extension also includes:
+
+- **6 color themes**: Light, Mirage, and Dark — each with bordered and unbordered variants
+- **File icons**: Custom icon theme included
+- **[Iosevka font](https://github.com/ayu-theme/vscode-ayu/tree/master/fonts)**: Bundled for a consistent look
+
+## Ports
+
+ayu is available for:
+
+- [Sublime Text](https://github.com/dempfi/ayu)
+- [and more...](https://ayutheme.com)
+
+---
+
+<p align="center">
+  <a href="https://ayutheme.com">ayutheme.com</a> •
+  <a href="https://ko-fi.com/dempfi">Buy me a coffee</a>
+</p>
