@@ -1,5 +1,11 @@
 If you run into any issues, please report them at <https://github.com/ayu-theme/vscode-ayu/issues>
 
+## 1.1.8
+
+`2026-02-07`
+
+- Fix the hover/active background of action buttons in action bar and toolbar
+
 ## 1.1.7
 
 `2026-01-03`

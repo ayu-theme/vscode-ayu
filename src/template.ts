@@ -36,6 +36,7 @@ export default (variant: SchemeName, bordered: boolean) => {
       // BASE COLOURS
       focusBorder: scheme.common.accent.tint.hex(),
       foreground: scheme.ui.fg.hex(),
+      disabledForeground: scheme.ui.fg.alpha(0.5).hex(),
       'widget.border': scheme.ui.line.hex(),
       'widget.shadow': scheme.ui.panel.shadow.hex(),
       'selection.background': scheme.editor.selection.active.hex(),
@@ -50,7 +51,7 @@ export default (variant: SchemeName, bordered: boolean) => {
       'textPreformat.foreground': scheme.editor.fg.hex(),
 
       // ACTION COLORS
-      'toolbar.hoverBackground': scheme.ui.fg.alpha(0.3).hex(),
+      'toolbar.hoverBackground': scheme.ui.selection.active.hex(),
       // 'toolbar.hoverOutline': scheme.ui.fg.alpha(0.6).hex(),
       //'toolbar.activeBackground':
       //'editorActionList.background':
@@ -441,6 +442,8 @@ export default (variant: SchemeName, bordered: boolean) => {
       'commandCenter.inactiveBorder': scheme.ui.line.hex(),
       'commandCenter.activeBorder': scheme.ui.selection.active.alpha(0).hex(),
       // 'commandCenter.debuggingBackground': scheme.syntax.operator.alpha(0.2).hex(),
+
+      'actionBar.toggledBackground': scheme.ui.selection.active.hex(),
 
       // PROFILE BADGE
       'profileBadge.background': scheme.common.accent.tint.hex(),
