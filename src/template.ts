@@ -350,11 +350,14 @@ export default (variant: SchemeName, bordered: boolean) => {
       // 'menubar.selectionForeground': '?',
       // 'menubar.selectionBackground': '?',
       // 'menubar.selectionBorder': '?',
-      // 'menu.foreground': '?',
+      'menu.foreground': scheme.ui.fg.hex(),
       // 'menu.background': '?',
       // 'menu.selectionForeground': '?',
-      // 'menu.selectionBackground': '?',
-      // 'menu.selectionBorder': '?',
+      'menu.selectionBackground': scheme.ui.selection.normal.hex(),
+      'menu.selectionBorder': scheme.ui.selection.active.hex(),
+      'menu.background': scheme.ui.popup.bg.hex(),
+      'menu.border': scheme.ui.line.hex(),
+      'menu.separatorBackground': scheme.ui.line.hex(),
 
       // NOTIFICATION
       // 'notificationCenter.border': '?',

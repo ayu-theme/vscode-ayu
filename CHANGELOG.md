@@ -1,5 +1,11 @@
 If you run into any issues, please report them at <https://github.com/ayu-theme/vscode-ayu/issues>
 
+## 1.1.9
+
+`2026-02-13`
+
+- More prominent styling of custom menus
+
 ## 1.1.8
 
 `2026-02-07`
