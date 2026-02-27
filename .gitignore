@@ -12,7 +12,6 @@
 .vscode
 
 /node_modules
-/icons
 .dart_tool
 pubspec.lock
 *.vsix
