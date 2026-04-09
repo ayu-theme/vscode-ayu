@@ -66,6 +66,9 @@
 		"circleci": {
 			"iconPath": "./icons/file_type_circleci@2x.png"
 		},
+		"claude": {
+			"iconPath": "./icons/file_type_claude.svg"
+		},
 		"clojure": {
 			"iconPath": "./icons/file_type_clojure@2x.png"
 		},
@@ -760,6 +763,8 @@
 		"Cargo.toml": "cargo",
 		"checkstyle.json": "haxe",
 		"circle.yml": "circleci",
+		"claude.md": "claude",
+		"CLAUDE.md": "claude",
 		"composer.json": "composer",
 		"composer.lock": "composer",
 		"config.ru": "rails",

@@ -1,5 +1,11 @@
 If you run into any issues, please report them at <https://github.com/ayu-theme/vscode-ayu/issues>
 
+## 1.1.12
+
+`2026-04-09`
+
+- Add icon for claude.md file
+
 ## 1.1.9
 
 `2026-02-13`
