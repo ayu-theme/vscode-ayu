@@ -1,5 +1,6 @@
 node_modules
 assets
 !assets/logo.png
+!icons
 test
 yarn.lock
