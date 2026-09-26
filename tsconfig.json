@@ -6,7 +6,7 @@
     "esModuleInterop": true,
     "skipLibCheck": true,
     "strict": true,
-    "baseUrl": "src",
+    "types": ["node"],
     "rootDir": "src",
     "outDir": "dist"
   },

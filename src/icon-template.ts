@@ -138,7 +138,7 @@ export default function iconTemplate(): IconTheme {
   // Build languageIds by looking up extensions
   const languageIds: Record<string, string> = {}
   for (const [langId, ext] of Object.entries(langToExt)) {
-    const iconId = icons.extensions[ext]
+    const iconId = icons.extensions[ext as keyof typeof icons.extensions]
     if (iconId) languageIds[langId] = iconId
   }
 
