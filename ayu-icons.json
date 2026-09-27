@@ -45,6 +45,9 @@
 		"babel": {
 			"iconPath": "./icons/file_type_babel@2x.png"
 		},
+		"bibtex": {
+			"iconPath": "./icons/file_type_bibtex.svg"
+		},
 		"binary": {
 			"iconPath": "./icons/file_type_binary.svg"
 		},
@@ -104,6 +107,9 @@
 		},
 		"editorconfig": {
 			"iconPath": "./icons/file_type_editorconfig@2x.png"
+		},
+		"ejs": {
+			"iconPath": "./icons/file_type_ejs.svg"
 		},
 		"elm": {
 			"iconPath": "./icons/file_type_elm@2x.png"
@@ -234,6 +240,9 @@
 		"nginx": {
 			"iconPath": "./icons/file_type_nginx@2x.png"
 		},
+		"nim": {
+			"iconPath": "./icons/file_type_nim.svg"
+		},
 		"nodejs": {
 			"iconPath": "./icons/file_type_nodejs@2x.png"
 		},
@@ -312,6 +321,9 @@
 		"riot": {
 			"iconPath": "./icons/file_type_riot@2x.png"
 		},
+		"robotframework": {
+			"iconPath": "./icons/file_type_robotframework.svg"
+		},
 		"rollup": {
 			"iconPath": "./icons/file_type_rollup.svg"
 		},
@@ -374,6 +386,9 @@
 		},
 		"tern": {
 			"iconPath": "./icons/file_type_tern@2x.png"
+		},
+		"terraform": {
+			"iconPath": "./icons/file_type_terraform.svg"
 		},
 		"tex": {
 			"iconPath": "./icons/file_type_tex@2x.png"
@@ -454,6 +469,7 @@
 		"bak": "settings",
 		"bash": "shell",
 		"bat": "shell",
+		"bib": "bibtex",
 		"bil": "lisp",
 		"bin": "binary",
 		"blade.php": "blade",
@@ -504,6 +520,7 @@
 		"edn": "clojure",
 		"eex": "ex",
 		"efi": "binary",
+		"ejs": "ejs",
 		"elf": "binary",
 		"elm": "elm",
 		"enc": "license",
@@ -535,6 +552,7 @@
 		"h": "c",
 		"haml": "haml",
 		"has": "haskell",
+		"hcl": "terraform",
 		"hex": "binary",
 		"hpp": "cpp",
 		"hs": "haskell",
@@ -606,6 +624,9 @@
 		"ndll": "binary",
 		"nginx": "nginx",
 		"nginxconf": "nginx",
+		"nim": "nim",
+		"nimble": "nim",
+		"nims": "nim",
 		"npmignore": "npm",
 		"nsh": "nsis",
 		"nsi": "nsis",
@@ -665,7 +686,9 @@
 		"rb": "ruby",
 		"re": "reasonml",
 		"reg": "windows",
+		"resource": "robotframework",
 		"riot": "riot",
+		"robot": "robotframework",
 		"rs": "rust",
 		"rwd": "matlab",
 		"s19": "binary",
@@ -697,6 +720,9 @@
 		"tex": "tex",
 		"texi": "tex",
 		"textile": "textile",
+		"tf": "terraform",
+		"tfstate": "terraform",
+		"tfvars": "terraform",
 		"tikz": "matlab",
 		"toml": "toml",
 		"ts": "typescript",
@@ -765,6 +791,8 @@
 		"circle.yml": "circleci",
 		"claude.md": "claude",
 		"CLAUDE.md": "claude",
+		"compose.yaml": "docker",
+		"compose.yml": "docker",
 		"composer.json": "composer",
 		"composer.lock": "composer",
 		"config.ru": "rails",
@@ -814,6 +842,7 @@
 	},
 	"hidesExplorerArrows": true,
 	"languageIds": {
+		"bibtex": "bibtex",
 		"c": "c",
 		"clojure": "clojure",
 		"coffeescript": "coffeescript",
@@ -821,6 +850,7 @@
 		"csharp": "csharp",
 		"css": "css",
 		"dart": "dart",
+		"ejs": "ejs",
 		"elixir": "ex",
 		"erlang": "erlang",
 		"fsharp": "csharp",
@@ -843,6 +873,8 @@
 		"less": "less",
 		"lua": "lua",
 		"markdown": "markdown",
+		"matlab": "matlab",
+		"nim": "nim",
 		"objective-c": "c",
 		"objective-cpp": "cpp",
 		"perl": "perl",
@@ -852,6 +884,7 @@
 		"python": "python",
 		"r": "R",
 		"razor": "html",
+		"robotframework": "robotframework",
 		"ruby": "ruby",
 		"rust": "rust",
 		"sass": "sass",
@@ -862,6 +895,7 @@
 		"stylus": "stylus",
 		"svelte": "svelte",
 		"swift": "swift",
+		"terraform": "terraform",
 		"tex": "tex",
 		"twig": "twig",
 		"typescript": "typescript",
