@@ -1,5 +1,18 @@
 If you run into any issues, please report them at <https://github.com/ayu-theme/vscode-ayu/issues>
 
+## 1.3.0
+
+`2026-09-27`
+
+- New file icons for Zig, Nix, Gleam, Odin, V, Crystal, Solidity, Protobuf, Prisma, Astro, MDX, Handlebars, Nunjucks, templ, GLSL, HLSL, WGSL, Metal, CUDA, Assembly, HTTP, VB, GDScript, reStructuredText, AsciiDoc and Org
+- F#, Objective-C and Objective-C++ get their own icons instead of the C# and C/C++ ones
+- Icons for build and project files: CMake, just, Taskfile, Jenkins, GitLab CI, `.env`, `tsconfig.json`, `go.mod`, `requirements.txt` and `pyproject.toml`
+- Icons for web tooling: Next.js, Nuxt, Gatsby, Vite, Vitest, Turbo, Nx, Biome, Deno, bun, pnpm, esbuild, SWC, Parcel, Lerna, Vercel, Netlify, Cloudflare, Firebase, Drizzle, Playwright, Cypress, Storybook, Renovate, Husky, lint-staged, commitlint and Browserslist
+- JavaScript and TypeScript test files, type definitions and source maps have their own icons
+- Config files for ESLint, Jest, PostCSS, Babel, Svelte, Astro and Tailwind in their newer formats show the matching icon
+- XML, INI, `.cfg`, `.conf`, JSONC, JSON5 and web manifest files get icons
+- The LaTeX icon is sharper, and LaTeX packages, classes and BibTeX styles get icons
+
 ## 1.2.2
 
 `2026-09-27`
