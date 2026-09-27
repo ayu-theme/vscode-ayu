@@ -39,25 +39,18 @@ To enable file icons: `Preferences > File Icon Theme > Ayu`.
 ### Light
 
 ![Light](assets/light.png)
-![Light Unbordered](assets/light-unbordered.png)
 
 ### Mirage
 
 ![Mirage](assets/mirage.png)
-![Mirage Unbordered](assets/mirage-unbordered.png)
 
 ### Dark
 
 ![Dark](assets/dark.png)
-![Dark Unbordered](assets/dark-unbordered.png)
 
-## Customization
+## What's included
 
-**Bordered vs Unbordered**: Bordered themes have visible dividers between UI panels. Unbordered themes have a seamless, unified look.
-
-The extension also includes:
-
-- **6 color themes**: Light, Mirage, and Dark — each with bordered and unbordered variants
+- **3 color themes**: Light, Mirage, and Dark, with support for VS Code's modern UI
 - **File icons**: Custom icon theme included
 - **[Iosevka font](https://github.com/ayu-theme/vscode-ayu/tree/master/fonts)**: Bundled for a consistent look
 

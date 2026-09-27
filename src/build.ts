@@ -11,8 +11,9 @@ console.log('Copied icons')
 
 // Generate color themes
 for (const variant of ['light', 'dark', 'mirage'] as SchemeName[]) {
-  writeFileSync(join(cwd, `ayu-${variant}.json`), JSON.stringify(template(variant, true), null, '\t'))
-  writeFileSync(join(cwd, `ayu-${variant}-unbordered.json`), JSON.stringify(template(variant, false), null, '\t'))
+  const theme = JSON.stringify(template(variant), null, '\t')
+  writeFileSync(join(cwd, `ayu-${variant}.json`), theme)
+  writeFileSync(join(cwd, `ayu-${variant}-unbordered.json`), theme)
   console.log(`Updated ${variant}`)
 }
 

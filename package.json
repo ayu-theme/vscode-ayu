@@ -30,40 +30,40 @@
   "contributes": {
     "themes": [
       {
-        "id": "Ayu Light",
-        "label": "Ayu Light",
-        "uiTheme": "vs",
-        "path": "./ayu-light-unbordered.json"
-      },
-      {
         "id": "Ayu Light Bordered",
-        "label": "Ayu Light Bordered",
+        "label": "Ayu Light",
         "uiTheme": "vs",
         "path": "./ayu-light.json"
       },
       {
-        "id": "Ayu Mirage",
-        "label": "Ayu Mirage",
-        "uiTheme": "vs-dark",
-        "path": "./ayu-mirage-unbordered.json"
-      },
-      {
         "id": "Ayu Mirage Bordered",
-        "label": "Ayu Mirage Bordered",
+        "label": "Ayu Mirage",
         "uiTheme": "vs-dark",
         "path": "./ayu-mirage.json"
       },
       {
-        "id": "Ayu Dark",
+        "id": "Ayu Dark Bordered",
         "label": "Ayu Dark",
         "uiTheme": "vs-dark",
-        "path": "./ayu-dark-unbordered.json"
+        "path": "./ayu-dark.json"
       },
       {
-        "id": "Ayu Dark Bordered",
-        "label": "Ayu Dark Bordered",
+        "id": "Ayu Light",
+        "label": "Ayu Light (legacy)",
+        "uiTheme": "vs",
+        "path": "./ayu-light-unbordered.json"
+      },
+      {
+        "id": "Ayu Mirage",
+        "label": "Ayu Mirage (legacy)",
         "uiTheme": "vs-dark",
-        "path": "./ayu-dark.json"
+        "path": "./ayu-mirage-unbordered.json"
+      },
+      {
+        "id": "Ayu Dark",
+        "label": "Ayu Dark (legacy)",
+        "uiTheme": "vs-dark",
+        "path": "./ayu-dark-unbordered.json"
       }
     ],
     "iconThemes": [
@@ -77,7 +77,8 @@
   "scripts": {
     "start": "tsx --watch ./src/build.ts",
     "build": "tsx ./src/build.ts && vsce package",
-    "publish": "vsce publish"
+    "test": "tsx --test src/*.test.ts",
+    "colors": "tsx ./src/coverage.ts"
   },
   "devDependencies": {
     "@types/node": "^24.19.0",
