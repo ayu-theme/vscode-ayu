@@ -1,5 +1,17 @@
 If you run into any issues, please report them at <https://github.com/ayu-theme/vscode-ayu/issues>
 
+## 1.2.0
+
+`2026-09-27`
+
+- Support for VS Code's modern UI: floating panels sit on a darker shell with their own borders, and tabs and activity bar items use pill highlights
+- Ayu Light, Mirage and Dark now always have borders. The former borderless themes now look the same, are listed as "(legacy)", and will be removed in a future release, so switch to the plain Ayu Light, Mirage or Dark
+- Title bar and status bar use the darker shell color
+- Command center border matches the panel borders
+- Files with merge conflicts are colored in the explorer and source control views
+- De-emphasized list items are dimmed instead of red
+- Diff headers use the theme's purple
+
 ## 1.1.12
 
 `2026-04-09`
