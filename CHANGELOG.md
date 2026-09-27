@@ -1,5 +1,12 @@
 If you run into any issues, please report them at <https://github.com/ayu-theme/vscode-ayu/issues>
 
+## 1.2.1
+
+`2026-09-27`
+
+- New screenshots of all three themes in the modern UI
+- The README explains the "(legacy)" entries in the theme picker
+
 ## 1.2.0
 
 `2026-09-27`
