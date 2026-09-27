@@ -1,5 +1,13 @@
 If you run into any issues, please report them at <https://github.com/ayu-theme/vscode-ayu/issues>
 
+## 1.2.2
+
+`2026-09-27`
+
+- New file icons for Terraform, Nim, Robot Framework, EJS and BibTeX
+- MATLAB files show the MATLAB icon when a MATLAB extension is installed
+- `compose.yaml` and `compose.yml` show the Docker icon
+
 ## 1.2.1
 
 `2026-09-27`
