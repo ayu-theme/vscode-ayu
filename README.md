@@ -34,6 +34,10 @@ Then go to `Preferences > Color Theme` and select one of the Ayu variants.
 
 To enable file icons: `Preferences > File Icon Theme > Ayu`.
 
+### Legacy themes
+
+The theme picker also lists **Ayu Light (legacy)**, **Ayu Mirage (legacy)** and **Ayu Dark (legacy)**. They replace the former borderless variants, look identical to the main themes, and will be removed in a future release. If you use one, switch to the plain Ayu Light, Mirage or Dark.
+
 ## Screenshots
 
 ### Light
