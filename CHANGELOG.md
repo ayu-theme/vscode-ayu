@@ -1,5 +1,13 @@
 If you run into any issues, please report them at <https://github.com/ayu-theme/vscode-ayu/issues>
 
+## 1.4.0
+
+`2026-09-28`
+
+- Unbordered themes are back: Ayu Light, Mirage and Dark Unbordered drop the dividers between the side bar, editor, panel, title bar and status bar, so the window reads as one surface
+- In VS Code's modern UI, the unbordered themes lay the panels flush instead of floating them as separate islands
+- If you picked an unbordered theme before 1.2.0, or one of the "(legacy)" themes since, you get the borderless look back with no change to your settings
+
 ## 1.3.0
 
 `2026-09-27`
