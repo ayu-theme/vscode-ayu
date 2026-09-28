@@ -10,7 +10,7 @@ The VS Code port of ayu: three color themes (Light, Mirage and Dark) and the ayu
 
 Every `ayu-*.json` at the root and everything in `icons/` is build output, committed so that the extension ships without a build step. Never edit them by hand. The build overwrites them, and anything added directly to them is silently lost on the next build.
 
-- **Color themes** are generated from `src/`. Each variant is written twice with identical content, as `ayu-<variant>.json` and `ayu-<variant>-unbordered.json`, because existing users' settings select themes by the IDs that point at both files.
+- **Color themes** are generated from `src/`. Each variant is written twice, as `ayu-<variant>.json` (bordered) and `ayu-<variant>-unbordered.json`. The unbordered themes keep the plain `Ayu <Variant>` IDs, because existing users' settings select them by those IDs.
 - **Icons**, both the image files and which file names and extensions map to which icon, belong to ayu-colors. A new file icon goes into ayu-colors. This repo only adds the mapping from VS Code language IDs to those icons.
 
 After changing the template, run the build and commit the regenerated JSON alongside the source change.
@@ -25,14 +25,14 @@ After changing the template, run the build and commit the regenerated JSON along
 
 ## Previewing
 
-The **Preview theme** launch configuration (F5) opens an Extension Development Host on `test/`, which holds syntax samples for many languages. Its workspace settings select Ayu Mirage, the ayu icons and VS Code's modern UI. With `npm start` running, saved template changes show up in that window live.
+The **Preview theme** launch configuration (F5) opens an Extension Development Host on `test/`, which holds syntax samples for many languages. Its workspace settings select Ayu Mirage, the ayu icons and VS Code's modern UI. With `npm start` running, saved template changes show up in that window live. A development host starts on the extension's first theme of the current type whatever the settings say, so pick an unbordered theme from the theme picker once the window is open.
 
 ## Theme conventions
 
 - Colors come from the scheme's semantic groups (`ui`, `editor`, `syntax`, `vcs`, `common`), with variations derived through alpha or lightness. Apart from a few terminal greys and the translucent black of `statusBarItem.prominentHoverBackground` there are no hex literals. When the theme needs a color the scheme lacks, add it in ayu-colors.
 - `darken(x)` and `brighten(x)` shift OKLCH lightness by `x / 10`. `alpha(x)` sets opacity.
 - VS Code's modern UI, the floating "islands" layout, uses its own tokens (`modern*`, `surface.*`, `editor.border`). Any the theme leaves unset fall back to derivations of classic tokens, so they change whenever those do. Check them in the preview.
-- Check every change in all three variants. Light diverges from Mirage and Dark in places (badge foreground, terminal greys).
+- Check every change in all three variants, bordered and unbordered, in both the classic and the modern UI. Unbordered themes use the side bar background for the editor, title bar, status bar and modern UI shell, and hide every divider and card outline by painting it in that same color. Light diverges from Mirage and Dark in places (badge foreground, terminal greys).
 
 ## Tooling constraints
 

@@ -8,7 +8,9 @@ const registered = new Map(colors.map((c) => [c.id, c]))
 
 const defined = new Set<string>()
 for (const variant of ['light', 'dark', 'mirage'] as SchemeName[]) {
-  Object.keys(template(variant).colors).forEach((key) => defined.add(key))
+  for (const bordered of [true, false]) {
+    Object.keys(template(variant, bordered).colors).forEach((key) => defined.add(key))
+  }
 }
 
 const missing = colors.filter((c) => !c.deprecated && !defined.has(c.id))

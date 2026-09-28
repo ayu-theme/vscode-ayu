@@ -11,3 +11,4 @@ AGENTS.md
 CLAUDE.md
 .gitignore
 tsconfig.json
+.claude

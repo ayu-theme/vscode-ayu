@@ -49,19 +49,19 @@
       },
       {
         "id": "Ayu Light",
-        "label": "Ayu Light (legacy)",
+        "label": "Ayu Light Unbordered",
         "uiTheme": "vs",
         "path": "./ayu-light-unbordered.json"
       },
       {
         "id": "Ayu Mirage",
-        "label": "Ayu Mirage (legacy)",
+        "label": "Ayu Mirage Unbordered",
         "uiTheme": "vs-dark",
         "path": "./ayu-mirage-unbordered.json"
       },
       {
         "id": "Ayu Dark",
-        "label": "Ayu Dark (legacy)",
+        "label": "Ayu Dark Unbordered",
         "uiTheme": "vs-dark",
         "path": "./ayu-dark-unbordered.json"
       }

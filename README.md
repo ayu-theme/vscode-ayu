@@ -34,9 +34,9 @@ Then go to `Preferences > Color Theme` and select one of the Ayu variants.
 
 To enable file icons: `Preferences > File Icon Theme > Ayu`.
 
-### Legacy themes
+### Unbordered themes
 
-The theme picker also lists **Ayu Light (legacy)**, **Ayu Mirage (legacy)** and **Ayu Dark (legacy)**. They replace the former borderless variants, look identical to the main themes, and will be removed in a future release. If you use one, switch to the plain Ayu Light, Mirage or Dark.
+Each variant also comes as **Unbordered**: no dividers between the side bar, editor, panel, title bar and status bar, so the whole window reads as one surface. In VS Code's modern UI the panels sit flush instead of floating as separate islands.
 
 ## Screenshots
 
@@ -54,7 +54,7 @@ The theme picker also lists **Ayu Light (legacy)**, **Ayu Mirage (legacy)** and 
 
 ## What's included
 
-- **3 color themes**: Light, Mirage, and Dark, with support for VS Code's modern UI
+- **6 color themes**: Light, Mirage, and Dark, each bordered and unbordered, with support for VS Code's modern UI
 - **File icons**: Custom icon theme included
 - **[Iosevka font](https://github.com/ayu-theme/vscode-ayu/tree/master/fonts)**: Bundled for a consistent look
 
