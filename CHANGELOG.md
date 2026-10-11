@@ -1,5 +1,12 @@
 If you run into any issues, please report them at <https://github.com/ayu-theme/vscode-ayu/issues>
 
+## 1.4.1
+
+`2026-10-11`
+
+- The bordered themes mark the active tab with a single accent line along its top edge, so the connected tabs in VS Code's modern UI join the editor cleanly
+- The tab bar in the bordered themes is lighter, closer to the side bar
+
 ## 1.4.0
 
 `2026-09-28`
