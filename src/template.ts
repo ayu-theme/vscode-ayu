@@ -25,16 +25,6 @@ const terminalColors = {
 
 export default (variant: SchemeName, bordered: boolean) => {
   const scheme = ayu[variant]
-  const divider = bordered ? scheme.ui.line : scheme.ui.bg
-  const editorBg = bordered ? scheme.editor.bg : scheme.ui.bg
-  const shell = bordered ? scheme.surface.sunk : scheme.ui.bg
-  const itemActive = scheme.ui.selection.active
-  const itemHover = itemActive.alpha(itemActive.getAlpha() / 2)
-  const cardBorder = !bordered
-    ? scheme.ui.bg
-    : variant === 'dark'
-      ? scheme.ui.line.darken(0.2)
-      : scheme.surface.sunk.darken(0.3)
   return {
     type: variant === 'light' ? 'light' : 'dark',
     colors: {
@@ -143,7 +133,7 @@ export default (variant: SchemeName, bordered: boolean) => {
       'activityBar.background': scheme.ui.bg.hex(),
       'activityBar.foreground': scheme.ui.fg.alpha(0.8).hex(),
       'activityBar.inactiveForeground': scheme.ui.fg.alpha(0.6).hex(),
-      'activityBar.border': divider.hex(),
+      'activityBar.border': bordered ? scheme.ui.line.hex() : scheme.ui.bg.hex(),
       'activityBar.activeBorder': scheme.common.accent.tint.hex(),
       'activityBarBadge.background': scheme.common.accent.tint.hex(),
       'activityBarBadge.foreground': scheme.common.accent.on.hex(),
@@ -153,16 +143,16 @@ export default (variant: SchemeName, bordered: boolean) => {
 
       // SIDE BAR
       'sideBar.background': scheme.ui.bg.hex(),
-      'sideBar.border': divider.hex(),
+      'sideBar.border': bordered ? scheme.ui.line.hex() : scheme.ui.bg.hex(),
       'sideBarTitle.foreground': scheme.ui.fg.hex(),
       'sideBarSectionHeader.background': scheme.ui.bg.hex(),
       'sideBarSectionHeader.foreground': scheme.ui.fg.hex(),
-      'sideBarSectionHeader.border': divider.hex(),
+      'sideBarSectionHeader.border': bordered ? scheme.ui.line.hex() : scheme.ui.bg.hex(),
       'sideBarStickyScroll.border': scheme.ui.line.hex(),
       'sideBarStickyScroll.shadow': scheme.ui.panel.shadow.hex(),
 
       // MINIMAP
-      'minimap.background': editorBg.hex(),
+      'minimap.background': bordered ? scheme.editor.bg.hex() : scheme.ui.bg.hex(),
       'minimap.selectionHighlight': scheme.editor.selection.active.hex(),
       'minimap.errorHighlight': scheme.common.error.hex(),
       'minimap.findMatchHighlight': scheme.editor.findMatch.active.hex(),
@@ -174,13 +164,13 @@ export default (variant: SchemeName, bordered: boolean) => {
       'editorGroup.border': scheme.ui.line.hex(),
       'editorGroupHeader.noTabsBackground': scheme.ui.bg.hex(),
       'editorGroupHeader.tabsBackground': bordered
-        ? scheme.ui.bg.darken(0.2).hex()
+        ? scheme.ui.bg.darken(0.1).hex()
         : scheme.ui.bg.hex(),
-      'editorGroupHeader.tabsBorder': divider.hex(),
-      'tab.activeBackground': editorBg.hex(),
+      'editorGroupHeader.tabsBorder': bordered ? scheme.ui.line.hex() : scheme.ui.bg.hex(),
+      'tab.activeBackground': bordered ? scheme.editor.bg.hex() : scheme.ui.bg.hex(),
       'tab.activeForeground': scheme.editor.fg.hex(),
-      'tab.border': divider.hex(),
-      'tab.activeBorder': scheme.common.accent.tint.hex(),
+      'tab.border': bordered ? scheme.ui.line.hex() : scheme.ui.bg.hex(),
+      'tab.activeBorder': bordered ? undefined : scheme.common.accent.tint.hex(),
       'tab.activeBorderTop': bordered ? scheme.common.accent.tint.hex() : undefined,
       'tab.unfocusedActiveBorder': bordered ? undefined : scheme.ui.fg.hex(),
       'tab.unfocusedActiveBorderTop': bordered ? scheme.ui.fg.hex() : undefined,
@@ -190,7 +180,7 @@ export default (variant: SchemeName, bordered: boolean) => {
       'tab.unfocusedInactiveForeground': scheme.ui.fg.hex(),
 
       // EDITOR
-      'editor.background': editorBg.hex(),
+      'editor.background': bordered ? scheme.editor.bg.hex() : scheme.ui.bg.hex(),
       'editor.foreground': scheme.editor.fg.hex(),
       'editorLineNumber.foreground': scheme.editor.lineNumber.normal.hex(),
       'editorLineNumber.activeForeground': scheme.editor.lineNumber.active.hex(),
@@ -337,9 +327,9 @@ export default (variant: SchemeName, bordered: boolean) => {
       'panelStickyScroll.shadow': scheme.ui.panel.shadow.hex(),
 
       // STATUS BAR
-      'statusBar.background': shell.hex(),
+      'statusBar.background': bordered ? scheme.surface.sunk.hex() : scheme.ui.bg.hex(),
       'statusBar.foreground': scheme.ui.fg.hex(),
-      'statusBar.border': divider.hex(),
+      'statusBar.border': bordered ? scheme.ui.line.hex() : scheme.ui.bg.hex(),
       'statusBar.debuggingBackground': scheme.syntax.operator.hex(),
       'statusBar.debuggingForeground': scheme.editor.bg.hex(),
       'statusBar.noFolderBackground': scheme.ui.panel.bg.hex(),
@@ -352,42 +342,69 @@ export default (variant: SchemeName, bordered: boolean) => {
       'statusBarItem.remoteForeground': scheme.common.accent.on.hex(),
 
       // TITLE BAR
-      'titleBar.activeBackground': shell.hex(),
-      'titleBar.inactiveBackground': shell.hex(),
+      'titleBar.activeBackground': bordered ? scheme.surface.sunk.hex() : scheme.ui.bg.hex(),
+      'titleBar.inactiveBackground': bordered ? scheme.surface.sunk.hex() : scheme.ui.bg.hex(),
       'titleBar.activeForeground': scheme.ui.fg.hex(),
       'titleBar.inactiveForeground': scheme.ui.fg.alpha(0.7).hex(),
-      'titleBar.border': divider.hex(),
+      'titleBar.border': bordered ? scheme.ui.line.hex() : scheme.ui.bg.hex(),
 
-      'modernUI.shellBackground': shell.hex(),
-      'modernUI.inactiveShellBackground': shell.hex(),
+      'modernUI.shellBackground': bordered ? scheme.surface.sunk.hex() : scheme.ui.bg.hex(),
+      'modernUI.inactiveShellBackground': bordered ? scheme.surface.sunk.hex() : scheme.ui.bg.hex(),
       'surface.background': scheme.ui.bg.hex(),
       'surface.foreground': scheme.ui.fg.hex(),
-      'surface.border': cardBorder.hex(),
-      'editor.border': cardBorder.hex(),
-      'modernPanel.border': cardBorder.hex(),
+      'surface.border': !bordered
+        ? scheme.ui.bg.hex()
+        : variant === 'dark'
+          ? scheme.ui.line.darken(0.2).hex()
+          : scheme.surface.sunk.darken(0.3).hex(),
+      'editor.border': !bordered
+        ? scheme.ui.bg.hex()
+        : variant === 'dark'
+          ? scheme.ui.line.darken(0.2).hex()
+          : scheme.surface.sunk.darken(0.3).hex(),
+      'modernPanel.border': !bordered
+        ? scheme.ui.bg.hex()
+        : variant === 'dark'
+          ? scheme.ui.line.darken(0.2).hex()
+          : scheme.surface.sunk.darken(0.3).hex(),
       'modernSash.gripForeground': scheme.ui.fg.alpha(0.4).hex(),
-      'modernTab.activeBackground': itemActive.hex(),
+      'modernTab.activeBackground': scheme.ui.selection.active.hex(),
       'modernTab.activeForeground': scheme.editor.fg.hex(),
       'modernTab.hoverBackground': scheme.surface.sunk.hex(),
       'modernTab.hoverForeground': scheme.editor.fg.hex(),
-      'modernEditorTab.activeBackground': itemActive.hex(),
+      'modernEditorTab.activeBackground': scheme.ui.selection.active.hex(),
       'modernEditorTab.activeForeground': scheme.editor.fg.hex(),
-      'modernEditorTab.activeActionBackground': itemActive.blend(scheme.editor.bg).hex(),
+      'modernEditorTab.activeActionBackground': scheme.ui.selection.active
+        .blend(scheme.editor.bg)
+        .hex(),
       'modernEditorTab.inactiveBackground': scheme.ui.bg.alpha(0).hex(),
-      'modernEditorTab.hoverBackground': itemHover.hex(),
+      'modernEditorTab.hoverBackground': scheme.ui.selection.active
+        .alpha(scheme.ui.selection.active.getAlpha() / 2)
+        .hex(),
       'modernEditorTab.hoverForeground': scheme.editor.fg.hex(),
-      'modernEditorTab.hoverActionBackground': itemHover.blend(scheme.editor.bg).hex(),
-      'modernEditorTab.activeHoverBackground': itemActive.hex(),
-      'modernEditorTab.activeHoverActionBackground': itemActive.blend(scheme.editor.bg).hex(),
+      'modernEditorTab.hoverActionBackground': scheme.ui.selection.active
+        .alpha(scheme.ui.selection.active.getAlpha() / 2)
+        .blend(scheme.editor.bg)
+        .hex(),
+      'modernEditorTab.activeHoverBackground': scheme.ui.selection.active.hex(),
+      'modernEditorTab.activeHoverActionBackground': scheme.ui.selection.active
+        .blend(scheme.editor.bg)
+        .hex(),
       'modernEditorTab.selectedActionBackground': scheme.ui.selection.normal
         .blend(scheme.editor.bg)
         .hex(),
       'modernActivityBar.background': scheme.ui.bg.hex(),
       'modernActivityBar.inactiveBackground': scheme.ui.bg.hex(),
-      'modernActivityBar.border': cardBorder.hex(),
-      'modernActivityBarItem.activeBackground': itemActive.hex(),
+      'modernActivityBar.border': !bordered
+        ? scheme.ui.bg.hex()
+        : variant === 'dark'
+          ? scheme.ui.line.darken(0.2).hex()
+          : scheme.surface.sunk.darken(0.3).hex(),
+      'modernActivityBarItem.activeBackground': scheme.ui.selection.active.hex(),
       'modernActivityBarItem.activeForeground': scheme.editor.fg.hex(),
-      'modernActivityBarItem.hoverBackground': itemHover.hex(),
+      'modernActivityBarItem.hoverBackground': scheme.ui.selection.active
+        .alpha(scheme.ui.selection.active.getAlpha() / 2)
+        .hex(),
       'modernActivityBarItem.hoverForeground': scheme.editor.fg.hex(),
 
       // MENU BAR
