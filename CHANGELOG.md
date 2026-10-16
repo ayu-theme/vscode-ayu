@@ -1,5 +1,19 @@
 If you run into any issues, please report them at <https://github.com/ayu-theme/vscode-ayu/issues>
 
+## 1.5.0
+
+`2026-10-16`
+
+- `AGENTS.md` gets its own icon: a terminal prompt with a spark
+- TypeScript icons use TypeScript blue, with a deeper shade in Ayu Light
+- JavaScript and TypeScript test files, configs, type definitions and source maps share the JS and TS icon frame and add a check mark, a gear, a dashed outline or a map pin
+- TSX files get their own icon, and `jsconfig.json` shows a JavaScript icon instead of the TypeScript one
+- New icons for `.env` files, `go.mod`, `.nvmrc` and `.node-version`
+- `.prettierignore` shows the Prettier icon
+- Icons for text, logs, notes, to-dos, settings, preferences and archives are redrawn to match the rest of the set
+- HTML, JSP, Lua, Composer, audio, HLSL and commitlint icons are simpler and read clearly at small sizes
+- Brand icons for Adobe apps, Babel, ESLint, Elixir, Erlang, Gradle, nginx, PowerShell, Sublime Text, webpack and others are sharp at any display scale
+
 ## 1.4.1
 
 `2026-10-11`

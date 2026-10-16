@@ -22,10 +22,13 @@
 			"iconPath": "./icons/file_type_actionscript@2x.png"
 		},
 		"ae": {
-			"iconPath": "./icons/file_type_ae@2x.png"
+			"iconPath": "./icons/file_type_ae.svg"
+		},
+		"agents": {
+			"iconPath": "./icons/file_type_agents.svg"
 		},
 		"ai": {
-			"iconPath": "./icons/file_type_ai@2x.png"
+			"iconPath": "./icons/file_type_ai.svg"
 		},
 		"angular": {
 			"iconPath": "./icons/file_type_angular.svg"
@@ -34,10 +37,10 @@
 			"iconPath": "./icons/file_type_apache.png"
 		},
 		"applescript": {
-			"iconPath": "./icons/file_type_applescript@2x.png"
+			"iconPath": "./icons/file_type_applescript.svg"
 		},
 		"archive": {
-			"iconPath": "./icons/file_type_archive@2x.png"
+			"iconPath": "./icons/file_type_archive.svg"
 		},
 		"asciidoc": {
 			"iconPath": "./icons/file_type_asciidoc.svg"
@@ -52,10 +55,10 @@
 			"iconPath": "./icons/file_type_astro_light.svg"
 		},
 		"audio": {
-			"iconPath": "./icons/file_type_audio@2x.png"
+			"iconPath": "./icons/file_type_audio.svg"
 		},
 		"babel": {
-			"iconPath": "./icons/file_type_babel@2x.png"
+			"iconPath": "./icons/file_type_babel.svg"
 		},
 		"bibtex": {
 			"iconPath": "./icons/file_type_bibtex.svg"
@@ -67,7 +70,7 @@
 			"iconPath": "./icons/file_type_biome.svg"
 		},
 		"blade": {
-			"iconPath": "./icons/file_type_blade@2x.png"
+			"iconPath": "./icons/file_type_blade.svg"
 		},
 		"bower": {
 			"iconPath": "./icons/file_type_bower@2x.png"
@@ -88,13 +91,13 @@
 			"iconPath": "./icons/file_type_cf@2x.png"
 		},
 		"circleci": {
-			"iconPath": "./icons/file_type_circleci@2x.png"
+			"iconPath": "./icons/file_type_circleci.svg"
 		},
 		"claude": {
 			"iconPath": "./icons/file_type_claude.svg"
 		},
 		"clojure": {
-			"iconPath": "./icons/file_type_clojure@2x.png"
+			"iconPath": "./icons/file_type_clojure.svg"
 		},
 		"cloudflare": {
 			"iconPath": "./icons/file_type_cloudflare.svg"
@@ -103,13 +106,13 @@
 			"iconPath": "./icons/file_type_cmake.svg"
 		},
 		"coffeescript": {
-			"iconPath": "./icons/file_type_coffeescript@2x.png"
+			"iconPath": "./icons/file_type_coffeescript.svg"
 		},
 		"commitlint": {
 			"iconPath": "./icons/file_type_commitlint.svg"
 		},
 		"composer": {
-			"iconPath": "./icons/file_type_composer@2x.png"
+			"iconPath": "./icons/file_type_composer.svg"
 		},
 		"cpp": {
 			"iconPath": "./icons/file_type_cpp.svg"
@@ -145,7 +148,7 @@
 			"iconPath": "./icons/file_type_deno.svg"
 		},
 		"dlang": {
-			"iconPath": "./icons/file_type_dlang@2x.png"
+			"iconPath": "./icons/file_type_dlang.svg"
 		},
 		"docker": {
 			"iconPath": "./icons/file_type_docker@2x.png"
@@ -169,19 +172,19 @@
 			"iconPath": "./icons/file_type_ejs.svg"
 		},
 		"elm": {
-			"iconPath": "./icons/file_type_elm@2x.png"
+			"iconPath": "./icons/file_type_elm.svg"
 		},
 		"erlang": {
-			"iconPath": "./icons/file_type_erlang@2x.png"
+			"iconPath": "./icons/file_type_erlang.svg"
 		},
 		"esbuild": {
 			"iconPath": "./icons/file_type_esbuild.svg"
 		},
 		"eslint": {
-			"iconPath": "./icons/file_type_eslint@2x.png"
+			"iconPath": "./icons/file_type_eslint.svg"
 		},
 		"ex": {
-			"iconPath": "./icons/file_type_ex@2x.png"
+			"iconPath": "./icons/file_type_ex.svg"
 		},
 		"excel": {
 			"iconPath": "./icons/file_type_excel@2x.png"
@@ -223,7 +226,7 @@
 			"iconPath": "./icons/file_type_gql.svg"
 		},
 		"gradle": {
-			"iconPath": "./icons/file_type_gradle@2x.png"
+			"iconPath": "./icons/file_type_gradle.svg"
 		},
 		"graphviz": {
 			"iconPath": "./icons/file_type_graphviz.svg"
@@ -253,7 +256,7 @@
 			"iconPath": "./icons/file_type_hlsl.svg"
 		},
 		"html": {
-			"iconPath": "./icons/file_type_html@2x.png"
+			"iconPath": "./icons/file_type_html.svg"
 		},
 		"http": {
 			"iconPath": "./icons/file_type_http.svg"
@@ -268,7 +271,7 @@
 			"iconPath": "./icons/file_type_image.svg"
 		},
 		"indesign": {
-			"iconPath": "./icons/file_type_indesign@2x.png"
+			"iconPath": "./icons/file_type_indesign.svg"
 		},
 		"java": {
 			"iconPath": "./icons/file_type_java.svg"
@@ -282,23 +285,23 @@
 		"js": {
 			"iconPath": "./icons/file_type_js.svg"
 		},
+		"jsconfig": {
+			"iconPath": "./icons/file_type_jsconfig.svg"
+		},
 		"jsmap": {
 			"iconPath": "./icons/file_type_jsmap.svg"
-		},
-		"jsmap_light": {
-			"iconPath": "./icons/file_type_jsmap_light.svg"
 		},
 		"json": {
 			"iconPath": "./icons/file_type_json.svg"
 		},
 		"jsp": {
-			"iconPath": "./icons/file_type_jsp@2x.png"
+			"iconPath": "./icons/file_type_jsp.svg"
 		},
 		"jsx": {
 			"iconPath": "./icons/file_type_jsx@2x.png"
 		},
 		"julia": {
-			"iconPath": "./icons/file_type_julia@2x.png"
+			"iconPath": "./icons/file_type_julia.svg"
 		},
 		"jupyter": {
 			"iconPath": "./icons/file_type_jupyter.svg"
@@ -325,19 +328,19 @@
 			"iconPath": "./icons/file_type_liquid.svg"
 		},
 		"lisp": {
-			"iconPath": "./icons/file_type_lisp@2x.png"
+			"iconPath": "./icons/file_type_lisp.svg"
 		},
 		"lock": {
 			"iconPath": "./icons/file_type_lock@2x.png"
 		},
 		"log": {
-			"iconPath": "./icons/file_type_log@2x.png"
+			"iconPath": "./icons/file_type_log.svg"
 		},
 		"lsl": {
 			"iconPath": "./icons/file_type_lsl@2x.png"
 		},
 		"lua": {
-			"iconPath": "./icons/file_type_lua@2x.png"
+			"iconPath": "./icons/file_type_lua.svg"
 		},
 		"markdown": {
 			"iconPath": "./icons/file_type_markdown.svg"
@@ -349,7 +352,7 @@
 			"iconPath": "./icons/file_type_matlab@2x.png"
 		},
 		"maya": {
-			"iconPath": "./icons/file_type_maya@2x.png"
+			"iconPath": "./icons/file_type_maya.svg"
 		},
 		"mdx": {
 			"iconPath": "./icons/file_type_mdx.svg"
@@ -376,7 +379,7 @@
 			"iconPath": "./icons/file_type_next_light.svg"
 		},
 		"nginx": {
-			"iconPath": "./icons/file_type_nginx@2x.png"
+			"iconPath": "./icons/file_type_nginx.svg"
 		},
 		"nim": {
 			"iconPath": "./icons/file_type_nim.svg"
@@ -385,10 +388,10 @@
 			"iconPath": "./icons/file_type_nix.svg"
 		},
 		"nodejs": {
-			"iconPath": "./icons/file_type_nodejs@2x.png"
+			"iconPath": "./icons/file_type_nodejs.svg"
 		},
 		"note": {
-			"iconPath": "./icons/file_type_note@2x.png"
+			"iconPath": "./icons/file_type_note.svg"
 		},
 		"npm": {
 			"iconPath": "./icons/file_type_npm.svg"
@@ -415,7 +418,7 @@
 			"iconPath": "./icons/file_type_objectivecpp.svg"
 		},
 		"ocaml": {
-			"iconPath": "./icons/file_type_ocaml@2x.png"
+			"iconPath": "./icons/file_type_ocaml.svg"
 		},
 		"odin": {
 			"iconPath": "./icons/file_type_odin.svg"
@@ -430,7 +433,7 @@
 			"iconPath": "./icons/file_type_parcel.svg"
 		},
 		"pdf": {
-			"iconPath": "./icons/file_type_pdf@2x.png"
+			"iconPath": "./icons/file_type_pdf.svg"
 		},
 		"perl": {
 			"iconPath": "./icons/file_type_perl.svg"
@@ -445,7 +448,7 @@
 			"iconPath": "./icons/file_type_playwright.svg"
 		},
 		"plist": {
-			"iconPath": "./icons/file_type_plist@2x.png"
+			"iconPath": "./icons/file_type_plist.svg"
 		},
 		"pnpm": {
 			"iconPath": "./icons/file_type_pnpm.svg"
@@ -460,13 +463,13 @@
 			"iconPath": "./icons/file_type_powerpoint@2x.png"
 		},
 		"powershell": {
-			"iconPath": "./icons/file_type_powershell@2x.png"
+			"iconPath": "./icons/file_type_powershell.svg"
 		},
 		"preferences": {
-			"iconPath": "./icons/file_type_preferences@2x.png"
+			"iconPath": "./icons/file_type_preferences.svg"
 		},
 		"premiere": {
-			"iconPath": "./icons/file_type_premiere@2x.png"
+			"iconPath": "./icons/file_type_premiere.svg"
 		},
 		"prettier": {
 			"iconPath": "./icons/file_type_prettier.svg"
@@ -484,7 +487,7 @@
 			"iconPath": "./icons/file_type_protobuf.svg"
 		},
 		"psd": {
-			"iconPath": "./icons/file_type_psd@2x.png"
+			"iconPath": "./icons/file_type_psd.svg"
 		},
 		"psm": {
 			"iconPath": "./icons/file_type_psm.svg"
@@ -493,7 +496,7 @@
 			"iconPath": "./icons/file_type_pug@2x.png"
 		},
 		"puppet": {
-			"iconPath": "./icons/file_type_puppet@2x.png"
+			"iconPath": "./icons/file_type_puppet.svg"
 		},
 		"python": {
 			"iconPath": "./icons/file_type_python.svg"
@@ -505,7 +508,7 @@
 			"iconPath": "./icons/file_type_rails@2x.png"
 		},
 		"reasonml": {
-			"iconPath": "./icons/file_type_reasonml@2x.png"
+			"iconPath": "./icons/file_type_reasonml.svg"
 		},
 		"renovate": {
 			"iconPath": "./icons/file_type_renovate.svg"
@@ -541,7 +544,7 @@
 			"iconPath": "./icons/file_type_scss.svg"
 		},
 		"settings": {
-			"iconPath": "./icons/file_type_settings@2x.png"
+			"iconPath": "./icons/file_type_settings.svg"
 		},
 		"shell": {
 			"iconPath": "./icons/file_type_shell.svg"
@@ -550,7 +553,7 @@
 			"iconPath": "./icons/file_type_sketch.svg"
 		},
 		"slim": {
-			"iconPath": "./icons/file_type_slim@2x.png"
+			"iconPath": "./icons/file_type_slim.svg"
 		},
 		"solidity": {
 			"iconPath": "./icons/file_type_solidity.svg"
@@ -571,13 +574,13 @@
 			"iconPath": "./icons/file_type_storybook.svg"
 		},
 		"stylelint": {
-			"iconPath": "./icons/file_type_stylelint@2x.png"
+			"iconPath": "./icons/file_type_stylelint.svg"
 		},
 		"stylus": {
 			"iconPath": "./icons/file_type_stylus@2x.png"
 		},
 		"sublime": {
-			"iconPath": "./icons/file_type_sublime@2x.png"
+			"iconPath": "./icons/file_type_sublime.svg"
 		},
 		"svelte": {
 			"iconPath": "./icons/file_type_svelte.svg"
@@ -595,7 +598,7 @@
 			"iconPath": "./icons/file_type_taskfile.svg"
 		},
 		"tcl": {
-			"iconPath": "./icons/file_type_tcl@2x.png"
+			"iconPath": "./icons/file_type_tcl.svg"
 		},
 		"templ": {
 			"iconPath": "./icons/file_type_templ.svg"
@@ -609,23 +612,23 @@
 		"testjs": {
 			"iconPath": "./icons/file_type_testjs.svg"
 		},
-		"testjs_light": {
-			"iconPath": "./icons/file_type_testjs_light.svg"
-		},
 		"testts": {
 			"iconPath": "./icons/file_type_testts.svg"
+		},
+		"testts_light": {
+			"iconPath": "./icons/file_type_testts_light.svg"
 		},
 		"tex": {
 			"iconPath": "./icons/file_type_tex.svg"
 		},
 		"text": {
-			"iconPath": "./icons/file_type_text@2x.png"
+			"iconPath": "./icons/file_type_text.svg"
 		},
 		"textile": {
 			"iconPath": "./icons/file_type_textile@2x.png"
 		},
 		"todo": {
-			"iconPath": "./icons/file_type_todo@2x.png"
+			"iconPath": "./icons/file_type_todo.svg"
 		},
 		"toml": {
 			"iconPath": "./icons/file_type_toml.svg"
@@ -636,6 +639,12 @@
 		"tsconfig": {
 			"iconPath": "./icons/file_type_tsconfig.svg"
 		},
+		"tsconfig_light": {
+			"iconPath": "./icons/file_type_tsconfig_light.svg"
+		},
+		"tsx": {
+			"iconPath": "./icons/file_type_tsx.svg"
+		},
 		"turbo": {
 			"iconPath": "./icons/file_type_turbo.svg"
 		},
@@ -643,13 +652,19 @@
 			"iconPath": "./icons/file_type_turbo_light.svg"
 		},
 		"twig": {
-			"iconPath": "./icons/file_type_twig@2x.png"
+			"iconPath": "./icons/file_type_twig.svg"
 		},
 		"typescript": {
 			"iconPath": "./icons/file_type_typescript.svg"
 		},
+		"typescript_light": {
+			"iconPath": "./icons/file_type_typescript_light.svg"
+		},
 		"typescriptdef": {
 			"iconPath": "./icons/file_type_typescriptdef.svg"
+		},
+		"typescriptdef_light": {
+			"iconPath": "./icons/file_type_typescriptdef_light.svg"
 		},
 		"vb": {
 			"iconPath": "./icons/file_type_vb.svg"
@@ -688,13 +703,13 @@
 			"iconPath": "./icons/file_type_wasm.svg"
 		},
 		"webpack": {
-			"iconPath": "./icons/file_type_webpack@2x.png"
+			"iconPath": "./icons/file_type_webpack.svg"
 		},
 		"wgsl": {
 			"iconPath": "./icons/file_type_wgsl.svg"
 		},
 		"windows": {
-			"iconPath": "./icons/file_type_windows@2x.png"
+			"iconPath": "./icons/file_type_windows.svg"
 		},
 		"word": {
 			"iconPath": "./icons/file_type_word@2x.png"
@@ -718,19 +733,24 @@
 		"fileExtensions": {
 			"astro": "astro_light",
 			"cr": "crystal_light",
-			"map": "jsmap_light",
+			"cts": "typescript_light",
+			"d.cts": "typescriptdef_light",
+			"d.mts": "typescriptdef_light",
+			"d.ts": "typescriptdef_light",
 			"mdx": "mdx_light",
+			"mts": "typescript_light",
 			"prisma": "prisma_light",
 			"sol": "solidity_light",
-			"spec.cjs": "testjs_light",
-			"spec.js": "testjs_light",
-			"spec.jsx": "testjs_light",
-			"spec.mjs": "testjs_light",
-			"test.cjs": "testjs_light",
-			"test.js": "testjs_light",
-			"test.jsx": "testjs_light",
-			"test.mjs": "testjs_light",
-			"toml": "toml_light"
+			"spec.cts": "testts_light",
+			"spec.mts": "testts_light",
+			"spec.ts": "testts_light",
+			"spec.tsx": "testts_light",
+			"test.cts": "testts_light",
+			"test.mts": "testts_light",
+			"test.ts": "testts_light",
+			"test.tsx": "testts_light",
+			"toml": "toml_light",
+			"ts": "typescript_light"
 		},
 		"fileNames": {
 			".huskyrc": "husky_light",
@@ -759,6 +779,7 @@
 			"nx.json": "nx_light",
 			"pnpm-lock.yaml": "pnpm_light",
 			"pnpm-workspace.yaml": "pnpm_light",
+			"tsconfig.json": "tsconfig_light",
 			"turbo.json": "turbo_light",
 			"vercel.json": "vercel_light",
 			"vite.config.js": "vite_light",
@@ -1116,7 +1137,7 @@
 		"tikz": "matlab",
 		"toml": "toml",
 		"ts": "typescript",
-		"tsx": "typescript",
+		"tsx": "tsx",
 		"ttf": "font",
 		"twig": "twig",
 		"txt": "text",
@@ -1184,6 +1205,7 @@
 		".parcelrc": "parcel",
 		".postcssrc": "postcss",
 		".postcssrc.json": "postcss",
+		".prettierignore": "prettier",
 		".prettierrc": "prettier",
 		".prettierrc.js": "prettier",
 		".prettierrc.json": "prettier",
@@ -1204,6 +1226,8 @@
 		".vercelignore": "vercel",
 		".yarnrc": "yarn",
 		".yarnrc.yml": "yarn",
+		"agents.md": "agents",
+		"AGENTS.md": "agents",
 		"angular.json": "angular",
 		"astro.config.cjs": "astro",
 		"astro.config.js": "astro",
@@ -1303,7 +1327,7 @@
 		"jest.config.mjs": "jest",
 		"jest.config.mts": "jest",
 		"jest.config.ts": "jest",
-		"jsconfig.json": "tsconfig",
+		"jsconfig.json": "jsconfig",
 		"justfile": "just",
 		"Justfile": "just",
 		"lerna.json": "lerna",
@@ -1476,7 +1500,7 @@
 		"tex": "tex",
 		"twig": "twig",
 		"typescript": "typescript",
-		"typescriptreact": "typescript",
+		"typescriptreact": "tsx",
 		"v": "vlang",
 		"vb": "vb",
 		"vue": "vue",
