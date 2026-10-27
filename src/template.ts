@@ -163,7 +163,8 @@ export default (variant: SchemeName, bordered: boolean) => {
       // EDITOR GROUPS & TABS
       'editorGroup.border': scheme.ui.line.hex(),
       'editorGroupHeader.noTabsBackground': scheme.ui.bg.hex(),
-      'editorGroupHeader.tabsBackground': bordered
+      'editorGroupHeader.tabsBackground': bordered ? scheme.editor.bg.hex() : scheme.ui.bg.hex(),
+      'editorGroupHeader.connectedTabsBackground': bordered
         ? scheme.ui.bg.darken(0.1).hex()
         : scheme.ui.bg.hex(),
       'editorGroupHeader.tabsBorder': bordered ? scheme.ui.line.hex() : scheme.ui.bg.hex(),

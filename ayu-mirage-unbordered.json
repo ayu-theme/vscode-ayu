@@ -92,6 +92,7 @@
 		"editorGroup.border": "#171b24",
 		"editorGroupHeader.noTabsBackground": "#1f2430",
 		"editorGroupHeader.tabsBackground": "#1f2430",
+		"editorGroupHeader.connectedTabsBackground": "#1f2430",
 		"editorGroupHeader.tabsBorder": "#1f2430",
 		"tab.activeBackground": "#1f2430",
 		"tab.activeForeground": "#cccac2",
