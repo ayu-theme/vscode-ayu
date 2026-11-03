@@ -137,8 +137,7 @@ export default (variant: SchemeName, bordered: boolean) => {
       'activityBar.activeBorder': scheme.common.accent.tint.hex(),
       'activityBarBadge.background': scheme.common.accent.tint.hex(),
       'activityBarBadge.foreground': scheme.common.accent.on.hex(),
-      'activityBarTop.foreground':
-        variant == 'light' ? scheme.ui.fg.darken(0.3).hex() : scheme.ui.fg.brighten(0.5).hex(),
+      'activityBarTop.foreground': scheme.ui.fg.alpha(1.15).hex(),
       'activityBarTop.activeBorder': scheme.common.accent.tint.hex(),
 
       // SIDE BAR
@@ -229,8 +228,8 @@ export default (variant: SchemeName, bordered: boolean) => {
       'editorRuler.foreground': scheme.editor.indentGuide.normal.hex(),
       'editorCodeLens.foreground': scheme.syntax.comment.hex(),
 
-      'editorBracketMatch.background': scheme.editor.lineNumber.normal.alpha(0.3).hex(),
-      'editorBracketMatch.border': scheme.editor.lineNumber.active.alpha(0.3).hex(),
+      'editorBracketMatch.background': scheme.ui.fg.alpha(0.3).hex(),
+      'editorBracketMatch.border': scheme.ui.fg.alpha(0.3).hex(),
 
       // SNIPPETS
       'editor.snippetTabstopHighlightBackground': scheme.vcs.added.alpha(0.2).hex(),
@@ -242,9 +241,7 @@ export default (variant: SchemeName, bordered: boolean) => {
       'editorOverviewRuler.deletedForeground': scheme.vcs.removed.hex(),
       'editorOverviewRuler.errorForeground': scheme.common.error.hex(),
       'editorOverviewRuler.warningForeground': scheme.common.accent.tint.hex(),
-      'editorOverviewRuler.bracketMatchForeground': scheme.editor.lineNumber.normal
-        .alpha(0.7)
-        .hex(),
+      'editorOverviewRuler.bracketMatchForeground': scheme.ui.fg.alpha(0.7).hex(),
       'editorOverviewRuler.wordHighlightForeground': scheme.vcs.modified.alpha(0.4).hex(),
       'editorOverviewRuler.wordHighlightStrongForeground': scheme.vcs.added.alpha(0.4).hex(),
       'editorOverviewRuler.findMatchForeground': scheme.editor.findMatch.active.hex(),
@@ -332,10 +329,14 @@ export default (variant: SchemeName, bordered: boolean) => {
       'statusBar.foreground': scheme.ui.fg.hex(),
       'statusBar.border': bordered ? scheme.ui.line.hex() : scheme.ui.bg.hex(),
       'statusBar.debuggingBackground': scheme.syntax.operator.hex(),
-      'statusBar.debuggingForeground': scheme.editor.bg.hex(),
+      'statusBar.debuggingForeground':
+        variant == 'light' ? scheme.syntax.operator.darken(4).hex() : scheme.editor.bg.hex(),
       'statusBar.noFolderBackground': scheme.ui.panel.bg.hex(),
       'statusBarItem.activeBackground': scheme.ui.fg.alpha(0.2).hex(),
-      'statusBarItem.hoverBackground': scheme.ui.fg.alpha(0.2).hex(),
+      'statusBarItem.hoverBackground':
+        variant == 'light' ? '#0000001a' : scheme.ui.fg.alpha(0.2).hex(),
+      'statusBarItem.hoverForeground':
+        variant == 'light' ? scheme.editor.fg.alpha(1.1).hex() : undefined,
       'statusBarItem.compactHoverBackground': scheme.ui.selection.normal.hex(),
       'statusBarItem.prominentBackground': scheme.ui.line.hex(),
       'statusBarItem.prominentHoverBackground': '#00000030',
@@ -379,12 +380,10 @@ export default (variant: SchemeName, bordered: boolean) => {
         .blend(scheme.editor.bg)
         .hex(),
       'modernEditorTab.inactiveBackground': scheme.ui.bg.alpha(0).hex(),
-      'modernEditorTab.hoverBackground': scheme.ui.selection.active
-        .alpha(scheme.ui.selection.active.getAlpha() / 2)
-        .hex(),
+      'modernEditorTab.hoverBackground': scheme.ui.selection.active.alpha(0.5).hex(),
       'modernEditorTab.hoverForeground': scheme.editor.fg.hex(),
       'modernEditorTab.hoverActionBackground': scheme.ui.selection.active
-        .alpha(scheme.ui.selection.active.getAlpha() / 2)
+        .alpha(0.5)
         .blend(scheme.editor.bg)
         .hex(),
       'modernEditorTab.activeHoverBackground': scheme.ui.selection.active.hex(),
@@ -403,9 +402,7 @@ export default (variant: SchemeName, bordered: boolean) => {
           : scheme.surface.sunk.darken(0.3).hex(),
       'modernActivityBarItem.activeBackground': scheme.ui.selection.active.hex(),
       'modernActivityBarItem.activeForeground': scheme.editor.fg.hex(),
-      'modernActivityBarItem.hoverBackground': scheme.ui.selection.active
-        .alpha(scheme.ui.selection.active.getAlpha() / 2)
-        .hex(),
+      'modernActivityBarItem.hoverBackground': scheme.ui.selection.active.alpha(0.5).hex(),
       'modernActivityBarItem.hoverForeground': scheme.editor.fg.hex(),
 
       // MENU BAR
@@ -499,8 +496,8 @@ export default (variant: SchemeName, bordered: boolean) => {
       'commandCenter.activeForeground': scheme.ui.fg.hex(),
       'commandCenter.background': scheme.editor.bg.hex(),
       'commandCenter.activeBackground': scheme.ui.selection.active.hex(),
-      'commandCenter.border': scheme.ui.line.hex(),
-      'commandCenter.inactiveBorder': scheme.ui.line.hex(),
+      'commandCenter.border': scheme.ui.fg.alpha(0.2).hex(),
+      'commandCenter.inactiveBorder': scheme.ui.fg.alpha(0.2).hex(),
       'commandCenter.activeBorder': scheme.ui.selection.active.alpha(0).hex(),
       // 'commandCenter.debuggingBackground': scheme.syntax.operator.alpha(0.2).hex(),
 
