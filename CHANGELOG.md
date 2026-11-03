@@ -1,5 +1,15 @@
 If you run into any issues, please report them at <https://github.com/ayu-theme/vscode-ayu/issues>
 
+## 1.6.0
+
+`2026-11-03`
+
+- Text in the editor and the UI is translucent, so it sits naturally on every surface: side bar, panels, popups, tabs and the modern UI's floating islands
+- Matching brackets, their overview ruler marks and the icons of an activity bar placed at the top follow the UI text color
+- The modern UI's editor tab strip matches the editor background
+- The command center in the title bar has the same outline as input fields, so it stands out in every variant, including Ayu Mirage with borders
+- Hovering status bar items in Ayu Light shows a soft dark highlight with darker text, and the debugging status bar reads clearly
+
 ## 1.5.0
 
 `2026-10-16`
